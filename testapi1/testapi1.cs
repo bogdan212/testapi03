@@ -46,7 +46,7 @@ namespace testapi1
             int count = 1;
             Regex regex = new Regex(@"\w*<ChannelInfo\w*");
             MatchCollection matches = regex.Matches(response.Content);
-            if ( matches.Count <= 6)
+            if ( matches.Count < 6)
             {
                 
                 
